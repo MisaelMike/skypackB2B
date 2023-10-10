@@ -1,11 +1,57 @@
-:root {
-    font-size: 100%;
-}
-
-
 * {
-    font-family: 'DM Sans';
-    font-size: 25px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+:root {
+    --primary-color: rgb(0, 133, 110);
+    --headline: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 9%, 31%);
+    --img-color: rgb(1, 56, 159);
+
+
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+
+body {
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+
+    text-align: center;
+
+}
+
+header {
+    width: 37.5rem;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 3.4rem;
+    color: var(--headline);
+    line-height: 130%;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+
+    color: var(--paragraph);
+}
+
+header.img {
+    background-color: var(--img-color);
+}
+
+div#q1{
+
+    background-image: url('assets/imagens/img-fundo.svg');
+}
 
