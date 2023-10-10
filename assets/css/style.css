@@ -5,19 +5,26 @@
 
 :root {
     --primary-color: rgb(0, 133, 110);
-    --headline: hsl(210, 11%, 15%);
-    --paragraph: hsl(210, 9%, 31%);
+    --headline: rgb(255, 255, 255);
+    --paragraph: rgb(255, 255, 255);
     --img-color: rgb(1, 56, 159);
 
 
     font-size: 62.5%; /* 1 rem = 10px*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+html,
 body {
     font-family: 'DM Sans';
     font-size: 1.6rem;
 
     text-align: center;
+
+    background-color: var(--img-color);
 
 }
 
@@ -26,32 +33,54 @@ header {
     
     margin-right: auto;
     margin-left: auto;
-}
-
-h4 {
-    font-size: 1.4rem;
+  
+    margin-top: 4.3rem;
+    
 }
 
 h1 {
     font-size: 3.4rem;
     color: var(--headline);
     line-height: 130%;
+
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: 2.9rem;
+    color: var(--headline);
+    line-height: 110%;
+
+    margin-bottom: 2rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--headline);
+    line-height: 110%;
+
+    margin-bottom: 1.6rem;
 }
 
 p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
-
-    color: var(--paragraph);
+    color: var(--headline);
 }
 
-header.img {
-    background-color: var(--img-color);
+.img-fundo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../imagens/img-fundo.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-div#q1{
-
-    background-image: url('assets/imagens/img-fundo.svg');
+.img-graphic-celular {
+    width: 40vw;
+    height: 40vh;
+    background-position: center center;
 }
-
