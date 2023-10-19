@@ -5,10 +5,12 @@
 
 :root {
     --primary-color: rgb(0, 133, 110);
+    --secondary-color: rgb(148, 185, 255);
+    --img-color: rgb(1, 56, 159);
     --headline: rgb(255, 255, 255);
     --paragraph: rgb(255, 255, 255);
-    --img-color: rgb(1, 56, 159);
     --whats-color: rgb(0, 133, 110);
+    --border-black: rgb(0, 0, 0);
 
 
     font-size: 62.5%; /* 1 rem = 10px*/
@@ -20,6 +22,7 @@ html {
 
 html,
 body {
+    
     font-family: 'DM Sans';
     font-size: 1.6rem;
 
@@ -30,7 +33,7 @@ body {
 }
 
 header {
-    width: 37.5rem;
+    width: 40rem;
     
     margin-right: auto;
     margin-left: auto;
@@ -40,6 +43,8 @@ header {
 }
 
 h1 {
+    width: 40rem;
+
     font-size: 3.4rem;
     color: var(--headline);
     line-height: 130%;
@@ -65,10 +70,12 @@ h3 {
 }
 
 p {
+    width: 40rem;
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
     color: var(--headline);
+    margin-bottom: 3.2rem;
 }
 
 .img-fundo {
@@ -80,9 +87,10 @@ p {
 }
 
 .img-graphic-celular {
-    width: 35rem;
+    width: 40rem;
     height: 25rem;
-    margin: auto;
+    margin-inline: auto;
+    margin-bottom: 3.2rem;
    
 }
 
@@ -108,7 +116,7 @@ button {
     
     height: 6.2rem;
     width: 27rem;
-    font-size: 1.4rem;
+    font-family: 'DM Sans';  
     text-transform: uppercase;
 
     display: flex;
@@ -116,11 +124,62 @@ button {
     justify-content: center;
     gap: 1.6rem;
 
-
-
-    
-
     margin-left: auto;
     margin-right: auto;
 
+}
+
+.sobre-celular {
+    width: 40rem;
+    height: 140rem;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.4rem solid var(--border-black);
+    border-radius: 2rem;
+
+}
+
+.sobre-celular-info {
+    width: 37rem;
+
+    border: 0.4rem solid var(--secondary-color);
+    border-radius: 2rem;
+
+    margin-inline: auto;
+
+}
+
+.sobre-celular-info h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 2rem;
+
+
+} 
+
+.sobre-celular-info p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35rem;
+
+    font-family: 'DM Sans';  
+    font-size: 1.8rem;
+
+    margin-inline: auto;
+
+}
+
+.nossa-quipe {
+    margin-bottom: 3.2rem;
+    background-color: var(--secondary-color);
 }
