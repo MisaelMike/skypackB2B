@@ -5,3 +5,12 @@ Pagina institucional:
     - Sobre ---------ok
     - Portfólio (Departamentos --- Futuramente, pagina para cada um ---) ---------ok
     - Contato
+
+
+
+img-escritorio
+img-descartavel
+img-embalagem
+img-epi
+img-informatica
+img-delevery
