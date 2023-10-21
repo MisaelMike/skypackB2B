@@ -1,9 +1,7 @@
 Pagina institucional:
 
 --> Terá menu com:
-    - Inicio
-    - Sobre
-    - Portfólio (Departamentos --- Futuramente, pagina para cada um ---) 
+    - Inicio ---------ok
+    - Sobre ---------ok
+    - Portfólio (Departamentos --- Futuramente, pagina para cada um ---) ---------ok
     - Contato
-
-

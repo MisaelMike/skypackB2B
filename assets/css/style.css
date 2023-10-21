@@ -9,6 +9,7 @@
     --img-color: rgb(1, 56, 159);
     --headline: rgb(255, 255, 255);
     --paragraph: rgb(255, 255, 255);
+    --backgroud-white: rgb(255, 255, 255);
     --whats-color: rgb(0, 133, 110);
     --border-black: rgb(0, 0, 0);
 
@@ -103,7 +104,7 @@ section.sobre-celular p {
 }
 
 section.sobre-celular {
-    background-color: white;
+    background-color: var(--backgroud-white);
 
 }
 
@@ -131,7 +132,7 @@ button {
 
 .sobre-celular {
     width: 40rem;
-    height: 140rem;
+    height: 130rem;
 
     margin-inline: auto;
 
@@ -162,7 +163,6 @@ button {
     gap: 2rem;
     margin: 4rem 2rem;
 
-
 } 
 
 .sobre-celular-info p {
@@ -179,7 +179,37 @@ button {
 
 }
 
-.nossa-quipe {
+.nossa-quipe-celular {
     margin-bottom: 3.2rem;
     background-color: var(--secondary-color);
+}
+
+.produto-servico-celular {
+    background-color: var(--secondary-color);
+}
+
+
+.portfolio-celular {
+    width: 40rem;
+
+    margin-top: 3rem;
+    background-color: var(--backgroud-white);
+
+    border: 0.4rem solid var(--border-black);
+    border-radius: 2rem;
+}
+
+.portfolio-celular h2 {
+    color: var(--img-color);
+    margin-top: 3rem;
+    
+}
+
+.img-portfolio-celular img {
+    margin: 3rem auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos no transform */
+}
+
+.img-portfolio-celular:hover img {
+    transform: translateY(-20px); /* Move a imagem 20 pixels para cima quando o mouse estiver sobre ela */
 }
