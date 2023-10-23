@@ -1,16 +1,27 @@
 Pagina institucional:
 
---> Terá menu com:
-    - Inicio ---------ok
-    - Sobre ---------ok
-    - Portfólio (Departamentos --- Futuramente, pagina para cada um ---) ---------ok
-    - Contato
+    --> menu:
+        - Inicio 
+        - Sobre 
+        - Portfólio 
+        - Contato
 
 
+    --> Inicio ---------ok
+
+    --> Sobre ---------ok
+
+    --> Portfólio ---------ok
+
+    --> Contato
+    
+    --> Rodapé:
+        - CNPJ
+        - Politica de privacidade
+
+    --> Aviso de cookies
 
 
-
-
-
-
-
+Passo 2°:
+    - Realizar pagina para cada Departamento.
+    - Pagina Sobre

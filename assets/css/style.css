@@ -10,7 +10,13 @@
 }
 
 #final-da-pagina{
-    background-color: red;
+    background-color: purple;
+}
+
+#logo-sobre-cel {
+    width: 37.5rem;
+    overflow: hidden;
+
 }
 
 :root {
