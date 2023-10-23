@@ -9,6 +9,10 @@
     width: 0px;
 }
 
+#final-da-pagina{
+    background-color: red;
+}
+
 :root {
     --primary-color: rgb(0, 133, 110);
     --secondary-color: rgb(148, 185, 255);
