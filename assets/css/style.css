@@ -313,7 +313,7 @@ body.menu-expended .menu {
     left: 0;
     background-color: var(--primary-color);
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     padding-top: var(--nav-height);
@@ -375,4 +375,11 @@ body.menu-expended button {
 
 .close-menu {
     padding-right: 4rem;
+    -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
+    outline: none;   
+}
+
+.open-menu {
+    -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
+    outline: none;
 }
