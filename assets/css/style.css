@@ -252,7 +252,6 @@ nav {
     display: flex;
     opacity: 90%;
    
-    padding-right: 2rem;
 
     height: var(--nav-height);
 
@@ -372,4 +371,8 @@ body.menu-expended .logo-menu-celular,
 body.menu-expended button {
     position: relative;
     z-index: 100;
+}
+
+.close-menu {
+    padding-right: 4rem;
 }
