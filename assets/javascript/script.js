@@ -8,7 +8,6 @@ function onScroll() {
     }
 }
 
-
 function openMenu() {
     document.body.classList.add("menu-expended")
 }
