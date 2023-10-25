@@ -38,4 +38,21 @@ window.addEventListener('resize', function() {
   
   // Chame a função inicialmente para configurar a margem corretamente
   adjustMarginTop();
+
+  /* Ajuste a margem superior do conteúdo para considerar a barra de endereço */
+function adjustForAddressBar() {
+    const contentElement = document.getElementById('#navigation'); // Substitua 'seu-conteudo' pelo ID do elemento de conteúdo
+    const addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
+    
+    if (contentElement) {
+      contentElement.style.marginTop = addressBarHeight + 'px';
+      contentElement.style.marginLeft = 'auto';
+      contentElement.style.marginRight = 'auto';
+    }
+  }
+  
+  // Chame a função inicialmente e sempre que a janela for redimensionada
+  adjustForAddressBar();
+  window.addEventListener('resize', adjustForAddressBar);
+  
   

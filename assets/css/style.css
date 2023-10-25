@@ -61,6 +61,14 @@ ul {
     list-style: none;
 }
 
+/* Adicione esta regra para dispositivos móveis apenas */
+@media (max-width: 768px) {
+    body {
+      overflow: overlay;
+    }
+  }
+  
+
 /* ============= Header ============= */
 
 header {
