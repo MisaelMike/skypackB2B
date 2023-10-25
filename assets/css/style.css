@@ -53,7 +53,7 @@ body {
 }
 
 .wrapper {
-    width: 37.5rem;   
+    width: 35rem;   
     margin-inline: auto;    
 }
 
@@ -105,7 +105,7 @@ p {
     margin-bottom: 3.2rem;
   
     position: relative;
-    right: 1.3rem;
+    right: 3rem;
     overflow: hidden;
 
 }
@@ -159,7 +159,7 @@ section.sobre-celular {
 }
 
 #logo-sobre-cel {
-    width: 37.5rem;
+    width: 35rem;
     overflow: hidden;
 }
 
@@ -219,9 +219,9 @@ section.sobre-celular {
 
 
 .portfolio-celular {
-    width: 37.5rem;
+    width: 35rem;
 
-    margin-top: 3rem;
+    margin-top: 4rem;
     background-color: var(--backgroud-white);
 
     border: 0.4rem solid var(--border-black);
@@ -269,7 +269,7 @@ nav .wrapper {
 }
 
 nav.scroll {
-    width: 100vw;
+    width: 100%;
     background-color: var(--secondary-color);
 }
 
@@ -374,7 +374,7 @@ body.menu-expended button {
 }
 
 .close-menu {
-    padding-right: 4rem;
+    padding-right: 2rem;
     -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
     outline: none;   
 }
