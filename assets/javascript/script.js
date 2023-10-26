@@ -18,7 +18,12 @@ function closeMenu() {
 
 function adjustForAddressBar() {
   const contentElement = document.getElementById('navigation'); // Substitua 'navigation' pelo ID do elemento de conteúdo
-  const addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
+  let addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
+
+  // Verificar se a barra de endereço está visível e ajustar a altura
+  if (addressBarHeight > 0) {
+    addressBarHeight = 0;
+  }
 
   if (contentElement) {
     contentElement.style.marginTop = addressBarHeight + 'px';
@@ -30,3 +35,4 @@ function adjustForAddressBar() {
 // Chame a função inicialmente e sempre que a janela for redimensionada
 adjustForAddressBar();
 window.addEventListener('resize', adjustForAddressBar);
+
