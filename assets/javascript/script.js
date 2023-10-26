@@ -30,7 +30,7 @@ window.addEventListener('resize', function() {
     var addressBarHeight = windowHeight - documentHeight;
   
     // Defina uma margem superior no elemento principal do conteúdo
-    var contentElement = document.getElementById('#navigation'); // Substitua 'seu-conteudo' pelo ID do elemento de conteúdo
+    var contentElement = document.getElementById('navigation'); // Substitua 'seu-conteudo' pelo ID do elemento de conteúdo
     if (contentElement) {
       contentElement.style.marginTop = addressBarHeight + 'px';
     }
@@ -45,7 +45,7 @@ function adjustForAddressBar() {
     const addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
     
     if (contentElement) {
-      contentElement.style.marginTop = addressBarHeight + '5px';
+      contentElement.style.marginTop = addressBarHeight + 'px';
       contentElement.style.marginLeft = 'auto';
       contentElement.style.marginRight = 'auto';
     }
