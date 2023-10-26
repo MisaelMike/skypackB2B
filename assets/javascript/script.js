@@ -20,19 +20,24 @@ function adjustForAddressBar() {
   const contentElement = document.getElementById('navigation'); // Substitua 'navigation' pelo ID do elemento de conteúdo
   let addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
 
-  // Verificar se a barra de endereço está visível e ajustar a altura
-  if (addressBarHeight > 0) {
-    addressBarHeight = 0;
-  }
-
   if (contentElement) {
     contentElement.style.marginTop = addressBarHeight + 'px';
     contentElement.style.marginLeft = 'auto';
     contentElement.style.marginRight = 'auto';
   }
+
+  window.addEventListener('resize', () => {
+    // Atualizar addressBarHeight quando a janela é redimensionada
+    addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
+    adjustForAddressBar();
+  });
+
+  window.addEventListener('scroll', () => {
+    // Atualizar addressBarHeight quando a página é rolada
+    addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
+    adjustForAddressBar();
+  });
 }
 
-// Chame a função inicialmente e sempre que a janela for redimensionada
+// Chame a função inicialmente
 adjustForAddressBar();
-window.addEventListener('resize', adjustForAddressBar);
-
