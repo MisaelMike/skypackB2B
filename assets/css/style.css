@@ -30,8 +30,6 @@
     background-color: purple;
 }
 
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -41,8 +39,6 @@ body {
     font-family: 'DM Sans';
     font-size: 1.2rem;
     text-align: center;
-
-    /* overflow: overlay; */
 
     background-color: var(--img-color);
 
@@ -54,7 +50,10 @@ body {
 
 .wrapper {
     width: 35rem;   
-    margin-inline: auto;    
+    margin-inline: auto;   
+
+    overflow: overlay;
+
 }
 
 ul {
@@ -313,7 +312,7 @@ body.menu-expended .menu {
     left: 0;
     background-color: var(--primary-color);
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     padding-top: var(--nav-height);
@@ -374,7 +373,7 @@ body.menu-expended button {
 }
 
 .close-menu {
-    /* padding-right: 2rem; */
+    padding-right: 2rem;
     -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
     outline: none;   
 }

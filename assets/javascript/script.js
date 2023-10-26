@@ -45,7 +45,9 @@ function adjustForAddressBar() {
     const addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
     
     if (contentElement) {
-      contentElement.style.marginTop = addressBarHeight + 'px';
+      contentElement.style.marginTop = addressBarHeight + '5px';
+      contentElement.style.marginLeft = 'auto';
+      contentElement.style.marginRight = 'auto';
     }
   }
   
