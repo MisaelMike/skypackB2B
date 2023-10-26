@@ -42,7 +42,7 @@ body {
     font-size: 1.2rem;
     text-align: center;
 
-    overflow: overlay;
+    /* overflow: overlay; */
 
     background-color: var(--img-color);
 
@@ -60,14 +60,6 @@ body {
 ul {
     list-style: none;
 }
-
-/* Adicione esta regra para dispositivos móveis apenas */
-@media (max-width: 768px) {
-    body {
-      overflow: overlay;
-    }
-  }
-  
 
 /* ============= Header ============= */
 
