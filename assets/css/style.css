@@ -52,7 +52,7 @@ body {
     width: 35rem;   
     margin-inline: auto;   
 
-    /* overflow: overlay; */
+    overflow: overlay; /* entender porque ele joga os elementos para a esquerda  */
 
 }
 
