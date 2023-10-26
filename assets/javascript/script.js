@@ -15,6 +15,7 @@ function openMenu() {
 function closeMenu() {
     document.body.classList.remove("menu-expended")
 }
+
 function adjustForAddressBar() {
   const contentElement = document.getElementById('navigation'); // Substitua 'navigation' pelo ID do elemento de conteúdo
   let addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
