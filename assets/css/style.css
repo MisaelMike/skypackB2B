@@ -46,14 +46,13 @@ body {
     background-size: cover;
     background-position: center center;
 
+    overflow: overlay; /* entender porque ele joga os elementos para a esquerda  */
+
 }
 
 .wrapper {
     width: 35rem;   
     margin-inline: auto;   
-
-    overflow: overlay; /* entender porque ele joga os elementos para a esquerda  */
-
 }
 
 ul {
@@ -273,8 +272,8 @@ nav.scroll {
 }
 
 nav.scroll svg path {
-    fill: rgba(0, 0, 0, 0.759);
-    stroke: rgba(0, 0, 0, 0.759);    
+    fill: var(--primary-color);
+    stroke: var(--primary-color);    
 }
 
 nav button {

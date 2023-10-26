@@ -73,7 +73,7 @@
                     <li><a href="#">Portfólio</a></li>
                 </ul>
 
-                <a class="button-menu" href="#">Fale com um especialista!</a href="#">
+                <a class="button-menu" href="#">Fale com um especialista!</a>
 
                 <ul class="social-links">
                     <li>
@@ -104,7 +104,7 @@
     
             </div>
 
-            <button onclick="openMenu()" class="open-menu">
+            <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu" href="#">
                 
                 <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.864 20H30.864" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -114,7 +114,7 @@
 
             </button>
 
-            <button onclick="closeMenu()" class="close-menu">
+            <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
                 
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
