@@ -374,7 +374,7 @@ body.menu-expended button {
 }
 
 .close-menu {
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
     -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
     outline: none;   
 }
