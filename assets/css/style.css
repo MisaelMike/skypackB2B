@@ -32,8 +32,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow: overlay; /* entender porque ele joga os elementos para a esquerda  */
-
+    
 }
 
 body {
@@ -41,18 +40,21 @@ body {
     font-family: 'DM Sans';
     font-size: 1.2rem;
     text-align: center;
-
+    
     background-color: var(--img-color);
-
+    
     background-image: url('../imagens/img-fundo.svg');
     background-size: cover;
     background-position: center center;
-
+    
 }
 
 .wrapper {
     width: 35rem;   
     margin-inline: auto;   
+    
+    overflow: overlay; /* entender porque ele joga os elementos para a esquerda  */
+
 }
 
 ul {
