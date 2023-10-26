@@ -32,6 +32,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: overlay; /* entender porque ele joga os elementos para a esquerda  */
+
 }
 
 body {
@@ -45,8 +47,6 @@ body {
     background-image: url('../imagens/img-fundo.svg');
     background-size: cover;
     background-position: center center;
-
-    overflow: overlay; /* entender porque ele joga os elementos para a esquerda  */
 
 }
 
