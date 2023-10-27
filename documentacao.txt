@@ -28,3 +28,9 @@ Passo 2°:
     - Pagina "Sobre" ("Missão e valores")
     - Pagina "Parceiro"
     - Pagina Politica de privacidade
+
+
+Bugs para arrumar:
+    - Menu extendido quebrado, quando aba de navegação esta ativa.
+    - overlay deixando o conteudo para a esquerda (se tira o overlay
+        ele fica com uma margem adicional a direirta)
