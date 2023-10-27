@@ -1,10 +1,9 @@
 Pagina institucional:
 
-    --> menu:
+    --> menu: ---------ok
         - Inicio 
         - Sobre 
         - Portfólio 
-        - Contato
 
 
     --> Inicio ---------ok
