@@ -53,14 +53,15 @@ body {
     background-size: cover;
     background-position: center center;
 
-   overflow: overlay;  /*entender porque ele joga os elementos para a esquerda */
-
+    
     
 }
 
 .wrapper {
     width: 35rem;   
     margin-inline: auto;     
+    
+    overflow: overlay;  /*entender porque ele joga os elementos para a esquerda */
     
 }
 
