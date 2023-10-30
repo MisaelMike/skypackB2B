@@ -46,15 +46,15 @@ body {
     background-image: url('../imagens/img-fundo.svg');
     background-size: cover;
     background-position: center center;
-    
+
+    overflow: hide; /* entender porque ele joga os elementos para a esquerda */
+    overflow-x: none;     
     
 }
 
 .wrapper {
     width: 35rem;   
-    margin-inline: auto;    
-    overflow: hide; /* entender porque ele joga os elementos para a esquerda */
-    overflow-x: none; 
+    margin-inline: auto;     
 }
 
 ul {
