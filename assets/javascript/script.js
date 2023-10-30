@@ -35,3 +35,20 @@ function adjustForAddressBar() {
 // Chame a função inicialmente e sempre que a janela for redimensionada
 adjustForAddressBar();
 window.addEventListener('resize', adjustForAddressBar);
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+function ajustarMargemDireita() {
+  // Obtém a largura da barra de rolagem do navegador
+  var larguraBarraRolagem = window.innerWidth - document.documentElement.clientWidth;
+
+  // Define a margem direita do elemento com base na largura da barra de rolagem
+  var elemento = document.getElementById("teste");
+  elemento.style.marginRight = larguraBarraRolagem + "px";
+}
+
+// Chame a função ao carregar a página
+window.onload = ajustarMargemDireita;
+
+// Chame a função sempre que a janela for redimensionada
+window.onresize = ajustarMargemDireita;
