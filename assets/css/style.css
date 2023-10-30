@@ -62,13 +62,7 @@ body {
     margin-inline: auto;      
     
     overflow: overlay;  /*entender porque ele joga os elementos para a esquerda */
-    
-}
-
-.wrapper-nav {
-    width: 35rem;   
-    margin-inline: auto;
-
+    overflow-x: hidden;
 }
 
 ul {
