@@ -47,14 +47,14 @@ body {
     background-size: cover;
     background-position: center center;
     
-    overflow-x: hidden;/* entender porque ele joga os elementos para a esquerda */
-
+    
 }
 
 .wrapper {
     width: 35rem;   
     margin-inline: auto;    
-    overflow: overlay;
+    overflow: hide; /* entender porque ele joga os elementos para a esquerda */
+    overflow-x: none; 
 }
 
 ul {
