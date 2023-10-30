@@ -22,9 +22,9 @@
     font-size: 62.5%; /* 1 rem = 10px*/
 }
 
-::-webkit-scrollbar{
-    width: 0px; /* retira a barra de rolagem mas permite que a continue funcionando */ 
-}
+/* ::-webkit-scrollbar{
+    width: 0px; /* retira a barra de rolagem mas permite que a continue funcionando  
+} */
 
 #final-da-pagina{
     background-color: purple;
@@ -54,14 +54,13 @@ body {
     background-position: center center;
 
     
+    overflow: overlay;  /*entender porque ele joga os elementos para a esquerda */
     
 }
 
 .wrapper {
     width: 35rem;   
-    margin-inline: auto;     
-    
-    overflow: overlay;  /*entender porque ele joga os elementos para a esquerda */
+    margin-inline: auto;      
     
 }
 
