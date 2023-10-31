@@ -251,16 +251,14 @@ section.sobre-celular {
 
 nav {
     display: flex;
-    opacity: 90%;
-   
 
     height: var(--nav-height);
 
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100vw;    
 
+    z-index: 110;
 }
 
 nav .wrapper {
@@ -271,11 +269,11 @@ nav .wrapper {
 }
 
 nav.scroll {
-    width: 100%;
     background-color: var(--secondary-color);
+
 }
 
-nav.scroll svg path {
+nav.scroll .logo path {
     fill: var(--primary-color);
     stroke: var(--primary-color);    
 }
@@ -293,7 +291,7 @@ body.menu-expended {
 }
 
 body.menu-expended > :not(nav) {
-    display: none;
+    visibility: hidden;
 }
 
 .menu,
@@ -309,6 +307,10 @@ body.menu-expended .close-menu {
     visibility: visible;
 }
 
+.menu {
+    transform: translateY(100%);
+} 
+
 body.menu-expended .menu {
     position: fixed;
     top: 0;
@@ -319,11 +321,11 @@ body.menu-expended .menu {
     height: 100vh;
 
     padding-top: var(--nav-height);
-}
 
-body.menu-expended nav {
-    position: relative;
+    transition: transform 700ms;
+    transform: translateY(0);
 }
+    
 
 .menu ul:nth-child(1) {
     display: flex;

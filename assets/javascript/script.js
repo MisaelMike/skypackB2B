@@ -9,7 +9,7 @@ function onScroll() {
 }
 
 function openMenu() {
-    document.documentElement.scrollTop = 0; // Isso rolará a página para o topo
+    // document.documentElement.scrollTop = 0; // Isso rolará a página para o topo
     document.body.classList.add("menu-expended")
 }
 
@@ -52,3 +52,13 @@ document.querySelectorAll('a.scroll-link').forEach(anchor => {
       }
   });
 });
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 1000,
+}).reveal(`#home,
+#home img,
+.botao-whats-cell,
+#sobre, 
+#portifolio`);
