@@ -1,4 +1,4 @@
-/* ============= Geral ============= */
+/* ================================================= Geral ================================================= */
 
 * {
     margin: 0;
@@ -45,9 +45,7 @@ body {
     
     background-image: url('../imagens/img-fundo.svg');
     background-size: cover;
-    background-position: center center;
-
-    
+    background-position: center center;    
     
 }
 
@@ -63,10 +61,10 @@ ul {
     list-style: none;
 }
 
-/* ============= Header ============= */
+/* ================================================= Header ================================================= */
 
 header {
-    margin-top: calc(4.1rem + var(--nav-height));
+    padding-top: calc(4.1rem + var(--nav-height));
 }
 
 header h1 {
@@ -110,6 +108,7 @@ p {
     right: 3rem;
     overflow: hidden;
 
+    z-index: -1;
 }
 
 section.sobre-celular h1,
@@ -130,7 +129,6 @@ section.sobre-celular {
     background-color: var(--whats-color);
     border: none;
     border-radius: 4rem;
-    margin-bottom: 6rem;
     
     height: 6.2rem;
     width: 27rem;
@@ -148,6 +146,7 @@ section.sobre-celular {
 }
 
 .sobre-celular {
+    margin-top: 6rem;
     margin-bottom: 6rem;
 
     display: flex;
@@ -248,7 +247,7 @@ section.sobre-celular {
     transform: translateY(-20px); 
 }*/
 
-/* ============= Navigation ============= */
+/* ================================================= Navigation ================================================= */
 
 nav {
     display: flex;
@@ -287,7 +286,7 @@ nav button {
     cursor: pointer;
 }
 
-/* ============= Menu expended ============= */
+/* ================================================= Menu expended ================================================= */
 
 body.menu-expended {
     overflow: hidden;

@@ -9,6 +9,7 @@ function onScroll() {
 }
 
 function openMenu() {
+    document.documentElement.scrollTop = 0; // Isso rolará a página para o topo
     document.body.classList.add("menu-expended")
 }
 
@@ -35,3 +36,19 @@ function adjustForAddressBar() {
 // Chame a função inicialmente e sempre que a janela for redimensionada
 adjustForAddressBar();
 window.addEventListener('resize', adjustForAddressBar);
+
+document.querySelectorAll('a.scroll-link').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+          const yOffset = -120; // Ajuste a altura conforme necessário
+          const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
+          
+          window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+  });
+});
