@@ -5,7 +5,6 @@ Pagina institucional:
         - Sobre 
         - Portfólio 
 
-
     --> Inicio ---------ok
 
     --> Sobre ---------ok
@@ -29,7 +28,8 @@ Passo 2°:
     - Pagina Politica de privacidade
 
 
-Bugs para arrumar:
-    - Menu extendido quebrado, quando aba de navegação esta ativa.
-    - overlay deixando o conteudo para a esquerda (se tira o overlay
-        ele fica com uma margem adicional a direirta)
+Melhorias:
+    ** --> Banner (Institucional no Inicio)
+    ** --> Grafico ABC
+    ** --> Retirar bordas pretas no SOBRE.
+    ** --> Verificar composição cores.

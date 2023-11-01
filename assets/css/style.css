@@ -154,7 +154,6 @@ section.sobre-celular {
     justify-content: center;
     align-items: center;
 
-    border: 0.4rem solid var(--border-black);
     border-radius: 2rem;
 
 }
@@ -225,14 +224,16 @@ section.sobre-celular {
     margin-top: 4rem;
     background-color: var(--backgroud-white);
 
-    border: 0.4rem solid var(--border-black);
     border-radius: 2rem;
 }
 
 .portfolio-celular h2 {
     color: var(--primary-color);
-    margin-top: 3rem;
     
+}
+
+#portifolio {
+    padding-top: 3rem;
 }
 
 

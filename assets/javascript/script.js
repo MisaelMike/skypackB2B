@@ -61,4 +61,5 @@ ScrollReveal({
 #home img,
 .botao-whats-cell,
 #sobre, 
-#portifolio`);
+#portifolio,
+.produto-servico-celular`);
