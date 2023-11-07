@@ -18,7 +18,7 @@ function closeMenu() {
 }
 
 function adjustForAddressBar() {
-  const contentElement = document.getElementById('navigation'); // Substitua 'navigation' pelo ID do elemento de conteúdo
+  const contentElement = document.getElementById('navigation'); // 
   let addressBarHeight = window.innerHeight - document.documentElement.clientHeight;
 
   // Verificar se a barra de endereço está visível e ajustar a altura
@@ -37,15 +37,15 @@ function adjustForAddressBar() {
 adjustForAddressBar();
 window.addEventListener('resize', adjustForAddressBar);
 
-document.querySelectorAll('a.scroll-link').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+document.querySelectorAll('.scroll-link').forEach(element => {
+  element.addEventListener('click', function(e) {
       e.preventDefault();
       
       const targetId = this.getAttribute('href').substring(1);
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
-          const yOffset = -120; // Ajuste a altura conforme necessário
+          const yOffset = -120;
           const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
           
           window.scrollTo({ top: y, behavior: 'smooth' });
