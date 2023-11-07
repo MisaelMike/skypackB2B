@@ -274,10 +274,14 @@ nav.scroll {
 
 }
 
-nav.scroll .logo path {
+/* 
+    Para colocar as cores azul na navegação:
+    
+nav.scroll .logo-menu-celular path,
+nav.scroll button svg path {
     fill: var(--primary-color);
     stroke: var(--primary-color);    
-}
+} */
 
 nav button {
     background: none;
