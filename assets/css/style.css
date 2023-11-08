@@ -451,8 +451,10 @@ div.infos li {
 footer {
     background-color: var(--secondary-color);
     padding-block: 6rem;
-
+    
     text-align: left;
+
+    margin-top: 6rem;
 }
 
 div .logo-footer {
