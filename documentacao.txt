@@ -11,9 +11,9 @@ Pagina institucional:
 
     --> Portfólio ---------ok
 
-    --> Contato
+    --> Contato ---------ok
     
-    --> Rodapé:
+    --> Rodapé: ---------ok
         - CNPJ
         - Politica de privacidade
 
@@ -31,4 +31,5 @@ Passo 2°:
 Melhorias:
     ** --> Banner (Institucional no Inicio)
     ** --> Grafico ABC
-    ** --> Verificar composição cores.
+    ** --> Verificar composição cores:
+    (Sobre: CINZA [rgb(218, 224, 227)] - Cards no Sobre branco [rgb(255, 255, 255)])

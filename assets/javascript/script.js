@@ -45,7 +45,7 @@ document.querySelectorAll('.scroll-link').forEach(element => {
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
-          const yOffset = -120;
+          const yOffset = -100;
           const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
           
           window.scrollTo({ top: y, behavior: 'smooth' });

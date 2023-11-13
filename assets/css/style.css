@@ -9,15 +9,19 @@
 
 :root {
     --primary-color: rgb(1, 56, 159);
-    --secondary-color: rgb(75, 121, 207);
+    --secondary-color: rgb(0, 69, 197);
     --tertiary-color: rgb(148, 185, 255);
+    --sobre-background: rgb(218, 224, 227);
     --img-color: rgb(1, 56, 159);
     --headline: rgb(255, 255, 255);
     --paragraph: rgb(255, 255, 255);
     --backgroud-white: rgb(255, 255, 255);
-    --whats-color: rgb(0, 133, 110);
+    --whats-color: rgb(123, 184, 37);
     --border-black: rgb(0, 0, 0);
     --brand-hover: rgb(0, 71, 59);
+    --sobre-h3: rgb(63, 61, 62);
+    --sobre-p: rgb(80, 93, 104);
+
 
     --nav-height: 10rem;
 
@@ -26,10 +30,6 @@
 
  ::-webkit-scrollbar{
     width: 0px; /* retira a barra de rolagem mas permite que a continue funcionando */  
-}
-
-#final-da-pagina{
-    background-color: purple;
 }
 
 html {
@@ -43,11 +43,7 @@ body {
     font-size: 1.2rem;
     text-align: center;
     
-    background-color: var(--primary-color);
-    
-    background-image: url('../imagens/img-fundo.svg');
-    background-size: cover;
-    background-position: center center;    
+    background-color: var(--primary-color);     
     
 }
 
@@ -55,7 +51,7 @@ body {
     width: 35rem;   
     margin-inline: auto;      
     
-    overflow: overlay;  /*entender porque ele joga os elementos para a esquerda */
+    overflow: overlay;
     overflow-x: hidden;
 }
 
@@ -67,7 +63,7 @@ ul {
     color: white;
     background-color: var(--whats-color);
     border: none;
-    border-radius: 4rem;
+    border-radius: 1rem;
     
     padding: 1.6rem 3.2rem;
     width: fit-content;
@@ -89,14 +85,18 @@ ul {
     background-color: var(--brand-hover);
 }
 
-/* ================================================= Header ================================================= */
+/* ================================================= Inicio ================================================= */
 
-header {
+.inicio {
     padding-top: calc(4.1rem + var(--nav-height));
+
+    background-image: url('../imagens/img-fundo.svg');
+    background-size: cover;
+    background-position: center center;
 }
 
-header h1 {
-    font-size: 3.4rem;
+.inicio h1 {
+    font-size: 4rem;
     color: var(--headline);
     line-height: 130%;
 
@@ -113,7 +113,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--headline);
     line-height: 110%;
 
@@ -128,57 +128,42 @@ p {
     margin-bottom: 3.2rem;
 }
 
-.img-graphic-celular {
-    height: 25rem;
-    margin-bottom: 3.2rem;
-  
-    position: relative;
-    right: 3rem;
-    overflow: hidden;
-
-    z-index: -1;
+.button-inicio {
+    font-size: 1.8rem;
+    padding-inline: 8rem;
+    margin-inline: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
-section.sobre-celular h1,
-section.sobre-celular h2,
-section.sobre-celular h3,
-section.sobre-celular p {
-    color: var(--primary-color);    
-    
+/* ================================================= Sobre ================================================= */
+
+section.sobre-celular h1 {
+    width: 7rem;
+    border-bottom: 0.5rem solid var(--primary-color);
+    margin-block: 3rem 4rem;
+    display: inline-block;    
 }
+
 
 section.sobre-celular {
-    background-color: var(--backgroud-white);
-
-}
-
-.button-header {
-   margin-inline: auto;
+    background-color: var(--sobre-background);
 }
 
 .sobre-celular {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    border-radius: 2rem;
-
-}
-
-.sobre-celular p {
-    padding: 2rem;
-
 }
 
 .sobre-celular-info {
- 
-    border: 0.4rem solid var(--tertiary-color);
-    border-radius: 2rem;
 
+    background-color: var(--backgroud-white);
+ 
+    border-radius: 2rem;
+        
     margin-inline: auto;
     margin-bottom: 4rem;
 
@@ -187,22 +172,31 @@ section.sobre-celular {
 }
 
 .sobre-celular h2 {
-    margin-top: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 0;
+
+    color: var(--primary-color);
 }
 
 .sobre-celular-info h3 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     gap: 2rem;
     margin: 3rem 2rem;
 
+    font-size: 2rem;
+
+    color: var(--sobre-h3);
 } 
 
 .sobre-celular-info p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     width: 30rem;
 
@@ -211,23 +205,23 @@ section.sobre-celular {
 
     margin-inline: auto;
 
-    text-align: left;
+    color: var(--sobre-p);
 
 }
 
-.nossa-quipe-celular,
-.produto-servico-celular {
-    background-color: var(--tertiary-color);
+
+.sobre > p:first-of-type {
+    line-height: 3rem;
+    font-size: 1.7rem;
+    color: var(--sobre-p);
+    padding: 1.2rem;
 }
 
+
+/* ================================================= Portfolio ================================================= */
 
 .portfolio-celular {
-    width: 35rem;
-
-    margin-top: 4rem;
     background-color: var(--backgroud-white);
-
-    border-radius: 2rem;
 }
 
 .portfolio-celular h2 {
@@ -246,10 +240,6 @@ section.sobre-celular {
     transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos no transform */
 }
 
-/*.img-portfolio-celular:hover img {
-    "Move a imagem 20 pixels para cima quando o mouse estiver sobre ela - deixar como comentário"
-    transform: translateY(-20px); 
-}*/
 
 /* ================================================= Navigation ================================================= */
 
@@ -264,7 +254,6 @@ nav {
 
     z-index: 110;
 
-    opacity: 95%;
 }
 
 nav .wrapper {
@@ -278,19 +267,15 @@ nav.scroll {
     background-color: var(--secondary-color);
 }
 
-/* 
-    Para colocar as cores azul na navegação:
-    
-nav.scroll .logo-menu-celular path,
-nav.scroll button svg path {
-    fill: var(--primary-color);
-    stroke: var(--primary-color);    
-} */
-
 nav button {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+nav .menu,
+nav .close-menu {
+    position: fixed;
 }
 
 /* ================================================= Menu expended ================================================= */
@@ -321,7 +306,6 @@ body.menu-expended .close-menu {
 } 
 
 body.menu-expended .menu {
-    position: fixed;
     top: 0;
     left: 0;
     background-color: var(--primary-color);
@@ -387,12 +371,13 @@ body.menu-expended button {
 }
 
 .close-menu {
-    padding-right: 2rem;
     -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
-    outline: none;   
+    outline: none;
+    margin-left: auto; 
 }
 
-.open-menu {
+body.menu-expended .open-menu {
+    display: none;
     -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
     outline: none;
 }
