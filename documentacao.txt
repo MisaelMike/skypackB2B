@@ -33,3 +33,4 @@ Melhorias:
     ** --> Grafico ABC
     ** --> Verificar composição cores:
     (Sobre: CINZA [rgb(218, 224, 227)] - Cards no Sobre branco [rgb(255, 255, 255)])
+    ** --> Adicionar o EPI a lista de produtos

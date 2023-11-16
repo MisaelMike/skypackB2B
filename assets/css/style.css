@@ -1,4 +1,4 @@
-/* ================================================= Geral ================================================= */
+/* ============================================= Geral ============================================= */
 
 * {
     margin: 0;
@@ -10,18 +10,14 @@
 :root {
     --primary-color: rgb(1, 56, 159);
     --secondary-color: rgb(0, 69, 197);
-    --tertiary-color: rgb(148, 185, 255);
-    --sobre-background: rgb(218, 224, 227);
-    --img-color: rgb(1, 56, 159);
+    --tertiary-color: rgb(54, 120, 242);
     --headline: rgb(255, 255, 255);
-    --paragraph: rgb(255, 255, 255);
     --backgroud-white: rgb(255, 255, 255);
     --whats-color: rgb(123, 184, 37);
-    --border-black: rgb(0, 0, 0);
     --brand-hover: rgb(0, 71, 59);
+    --background-gray: rgb(218, 224, 227);
     --sobre-h3: rgb(63, 61, 62);
-    --sobre-p: rgb(80, 93, 104);
-
+    --p-color: rgb(80, 93, 104);
 
     --nav-height: 10rem;
 
@@ -34,17 +30,14 @@
 
 html {
     scroll-behavior: smooth;
-    
 }
 
-body {
-    
+body {    
     font-family: 'DM Sans';
     font-size: 1.2rem;
     text-align: center;
     
-    background-color: var(--primary-color);     
-    
+    background-color: var(--primary-color);         
 }
 
 .wrapper {
@@ -85,163 +78,7 @@ ul {
     background-color: var(--brand-hover);
 }
 
-/* ================================================= Inicio ================================================= */
-
-.inicio {
-    padding-top: calc(4.1rem + var(--nav-height));
-
-    background-image: url('../imagens/img-fundo.svg');
-    background-size: cover;
-    background-position: center center;
-}
-
-.inicio h1 {
-    font-size: 4rem;
-    color: var(--headline);
-    line-height: 130%;
-
-    margin-bottom: 1.2rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    color: var(--headline);
-    line-height: 110%;
-
-    margin-bottom: 2rem;
-
-}
-
-h3 {
-    font-size: 1.2rem;
-    color: var(--headline);
-    line-height: 110%;
-
-    margin-bottom: 1.6rem;
-}
-
-p {
-    font-size: 1.4rem;
-    line-height: 150%;
-    font-weight: 400;
-    color: var(--headline);
-    margin-bottom: 3.2rem;
-}
-
-.button-inicio {
-    font-size: 1.8rem;
-    padding-inline: 8rem;
-    margin-inline: auto;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-}
-
-/* ================================================= Sobre ================================================= */
-
-section.sobre-celular h1 {
-    width: 7rem;
-    border-bottom: 0.5rem solid var(--primary-color);
-    margin-block: 3rem 4rem;
-    display: inline-block;    
-}
-
-
-section.sobre-celular {
-    background-color: var(--sobre-background);
-}
-
-.sobre-celular {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.sobre-celular-info {
-
-    background-color: var(--backgroud-white);
- 
-    border-radius: 2rem;
-        
-    margin-inline: auto;
-    margin-bottom: 4rem;
-
-    padding: 0.5rem;
-
-}
-
-.sobre-celular h2 {
-    margin-top: 6rem;
-    margin-bottom: 0;
-
-    color: var(--primary-color);
-}
-
-.sobre-celular-info h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 2rem;
-    margin: 3rem 2rem;
-
-    font-size: 2rem;
-
-    color: var(--sobre-h3);
-} 
-
-.sobre-celular-info p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    width: 30rem;
-
-    font-family: 'DM Sans';  
-    font-size: 1.4rem;
-
-    margin-inline: auto;
-
-    color: var(--sobre-p);
-
-}
-
-
-.sobre > p:first-of-type {
-    line-height: 3rem;
-    font-size: 1.7rem;
-    color: var(--sobre-p);
-    padding: 1.2rem;
-}
-
-
-/* ================================================= Portfolio ================================================= */
-
-.portfolio-celular {
-    background-color: var(--backgroud-white);
-}
-
-.portfolio-celular h2 {
-    color: var(--primary-color);
-    
-}
-
-#portifolio {
-    padding-top: 3rem;
-}
-
-
-.img-portfolio-celular img {
-    width: 60%;
-    margin: 3rem auto;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos no transform */
-}
-
-
-/* ================================================= Navigation ================================================= */
+/* ============================================= Navigation ============================================= */
 
 nav {
     display: flex;
@@ -278,7 +115,7 @@ nav .close-menu {
     position: fixed;
 }
 
-/* ================================================= Menu expended ================================================= */
+/* ============================================= Menu expended ============================================= */
 
 body.menu-expended {
     overflow: hidden;
@@ -319,7 +156,6 @@ body.menu-expended .menu {
     transform: translateY(0);
 }
     
-
 .menu ul:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -330,7 +166,6 @@ body.menu-expended .menu {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 3.1rem;
-
 }
 
 .menu ul li a {
@@ -382,16 +217,256 @@ body.menu-expended .open-menu {
     outline: none;
 }
 
-/* ================================================= Contato ================================================= */
+/* ============================================= Inicio ============================================= */
 
-.contato-cel,
-.contato-cel header {
-    text-align: left;
+.inicio {
+    padding-top: calc(4.1rem + var(--nav-height));
+
+    background-image: url('../imagens/img-fundo.svg');
+    background-size: cover;
+    background-position: center center;
 }
 
-.contato-cel header {
+.inicio h1 {
+    font-size: 4rem;
+    color: var(--headline);
+    line-height: 130%;
+
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--headline);
+
+    margin-bottom: 2rem;
+
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--headline);
+    line-height: 110%;
+
+    margin-bottom: 1.6rem;
+}
+
+.sobre-celular-info p {
+    font-size: 1.4rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--headline);
     margin-bottom: 3.2rem;
+}
+
+.button-inicio {
+    font-size: 1.8rem;
+    padding-inline: 8rem;
+    margin-inline: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+/* ============================================= Sobre ============================================= */
+
+section.sobre-celular h1 {
+    width: 7rem;
+    border-bottom: 0.5rem solid var(--primary-color);
+    margin-block: 3rem 4rem;
+    display: inline-block;    
+}
+
+section.sobre-celular {
+    background-color: var(--background-gray);
+}
+
+.sobre-celular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sobre-celular-info {
+    background-color: var(--backgroud-white);
+       
+    margin-inline: auto;
+    margin-bottom: 4rem;
+
+    padding: 0.5rem;
+
+}
+
+.sobre-celular h2 {
+    margin-top: 6rem;
+    margin-bottom: 0;
+
+    color: var(--primary-color);
+}
+
+.sobre-celular-info h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+    gap: 2rem;
+    margin: 3rem 2rem;
+
+    font-size: 2rem;
+
+    color: var(--sobre-h3);
+} 
+
+.sobre-celular-info p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 30rem;
+
+    font-family: 'DM Sans';  
+    font-size: 1.4rem;
+
+    margin-inline: auto;
+
+    color: var(--p-color);
+
+}
+
+.sobre-celular > div > p:first-of-type {
+    line-height: 3rem;
+    font-size: 1.7rem;
+    color: var(--p-color);
+    padding: 1.2rem;
+}
+
+/* ============================================= Curva ABC ============================================= */
+
+.curvaABC {
+    background-color: var(--backgroud-white);
+}
+
+.curvaABC h2 {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+
+    color: var(--primary-color);
+}
+
+.curvaABC > div > p:first-of-type {
+    line-height: 3rem;
+    font-size: 1.7rem;
+    color: var(--p-color);
+    padding: 1.2rem;
+}
+
+.curvaABC div h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-block: 3rem 2rem;    
+}
+
+.curvaABC div p {
+    color: var(--p-color);
+}
+
+.curvaABC div svg {
+    margin-bottom: 3rem;
+} 
+
+.legenda {
+    margin-bottom: 2rem;
+    text-align: left;   
+    font-size: 1.3rem;    
+}
+
+.destaqueA {
+    color: black;
+    font-weight: bold;
+}
+
+.destaqueB {
+    color: var(--secondary-color);
+    font-weight: bold; 
+}
+
+.destaqueC {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.curvaABC > div > div > p:last-child {
+    margin-bottom: 6rem;
+}
+
+/* ============================================= Portfolio ============================================= */
+
+.portfolio-celular {
+    background-color: var(--background-gray);
+}
+
+.portfolio-celular h2 {
+    color: var(--primary-color);
+    
+}
+
+#portifolio {
+    padding-top: 6rem;
+}
+
+.img-portfolio-celular img {
+    margin: 0 auto 3rem auto;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos no transform */
+}
+
+section.portfolio-celular h1 {
+    width: 7rem;
+    border-bottom: 0.5rem solid var(--primary-color);
+    margin-block: 3rem 4rem;
+    display: inline-block;    
+}
+
+section.portfolio-celular h2{
+    margin-bottom: 0;
+}
+
+.portfolio-celular > div > div:last-child {
+    margin-bottom: 6rem;
+}
+
+/* ============================================= Contato ============================================= */
+
+.contact-us h2 {
+    margin-top: 5rem;
+}
+
+.contact-us p {
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: var(--backgroud-white);
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.button-contact {
+    margin: 3rem auto 6rem auto;
+    text-align: center;
+    width: 32rem;
+    font-size: 1.8rem;
+
+}
+
+.contato-cel {
+    text-align: left;
+    background-color: var(--backgroud-white);
+}
+
+.contato-cel h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);    
 }
 
 .contato-cel ul {
@@ -399,7 +474,7 @@ body.menu-expended .open-menu {
     flex-direction: column;
     gap: 1.6rem;
 
-    margin-bottom: 3.2rem;
+    margin-block: 6rem;
 
 }
 
@@ -407,6 +482,7 @@ body.menu-expended .open-menu {
     display: flex;
     align-items: center;
     gap: 0.8rem;    
+    margin-bottom: 2rem;
 }
 
 .contato {
@@ -425,37 +501,45 @@ body.menu-expended .open-menu {
 }
 
 div.infos li {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 150%;
     font-weight: 400;
-    color: var(--headline);
+    color: var(--p-color);
 }
 
-/* ================================================= Footer ================================================= */
+/* ============================================= Politica de Privacidade ============================================= */
+
+.politica-privacidade {
+    background-color: black;
+}
+
+.politica-privacidade p {
+    color: var(--backgroud-white);
+    height: 10rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ============================================= Footer ============================================= */
 
 footer {
-    background-color: var(--secondary-color);
-    padding-block: 6rem;
-    
-    text-align: left;
+    /* background-color: var(--backgroud-white); */
+    background-color: var(--backgroud-white);
 
-    margin-top: 6rem;
+    padding-block: 6rem;   
 }
 
 div .logo-footer {
     display: inline-block;
-    margin-bottom: 2.4rem;
-}
-
-footer p {
-    line-height: 3;
-
-    margin-bottom: 3.2;
+    margin-bottom: 6rem;
 }
 
 .social-links-footer {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
 

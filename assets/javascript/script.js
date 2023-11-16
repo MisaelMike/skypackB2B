@@ -53,13 +53,13 @@ document.querySelectorAll('.scroll-link').forEach(element => {
   });
 });
 
-ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 1000,
-}).reveal(`#home,
-#home img,
-.botao-whats-cell,
-#sobre, 
-#portifolio,
-.produto-servico-celular`);
+// ScrollReveal({
+//   origin: 'top',
+//   distance: '30px',
+//   duration: 1000,
+// }).reveal(`#home,
+// #home img,
+// .botao-whats-cell,
+// #sobre, 
+// #portifolio,
+// .produto-servico-celular`);
