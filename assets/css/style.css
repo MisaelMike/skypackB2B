@@ -343,6 +343,10 @@ section.sobre-celular {
     padding: 1.2rem;
 }
 
+.sobre-celular-info:last-child {
+    margin-bottom: 8rem;
+}
+
 /* ============================================= Curva ABC ============================================= */
 
 .curvaABC {
@@ -399,7 +403,12 @@ section.sobre-celular {
 }
 
 .curvaABC > div > div > p:last-child {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
+}
+
+.abc svg {
+    position: relative;
+    right: 1.5rem;
 }
 
 /* ============================================= Portfolio ============================================= */
@@ -452,7 +461,7 @@ section.portfolio-celular h2{
 }
 
 .button-contact {
-    margin: 3rem auto 6rem auto;
+    margin: 3rem auto 8rem auto;
     text-align: center;
     width: 32rem;
     font-size: 1.8rem;
@@ -542,5 +551,40 @@ div .logo-footer {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+}
+
+/* ============================================= Desenvolvedor ============================================= */
+
+.desenvolvido{
+    padding-top: 3rem;
+    font-size: 1.2rem;
+
+}
+
+.desenvolvido a {
+    text-decoration: none;
+    color: var(--primary-color);    
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+
+
+
+.menu .button-menu {
+    background-color: var(--headline);
+    border-radius: 4rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    list-style: 2.3rem;
+    text-transform: uppercase;
+
+    color: var(--primary-color);    
+    
+    display: inline-block;
+    padding: 1.6rem 3.2rem;       
+    margin-top: 4.8rem;
+    margin-bottom: 8rem;
 
 }
