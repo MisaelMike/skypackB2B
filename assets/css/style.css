@@ -229,7 +229,7 @@ body.menu-expended .open-menu {
 .inicio {
     padding-top: calc(4.1rem + var(--nav-height));
 
-    background-image: url('/assets/imagens/img-fundo.png');
+    background-image: url('/assets/imagens/img-fundo.svg');
     background-size: cover;
     background-position: center center;
 }
