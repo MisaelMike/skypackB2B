@@ -68,9 +68,24 @@ function updateContent() {
   adjustForAddressBar();
 }
 
+function alterarDimensoesSVG() {
+  if (window.innerWidth >= 1024) {
+      var minhaDiv = document.querySelector('.abcSize');
+      var meuSVG = minhaDiv.querySelector('svg');
+      meuSVG.setAttribute('width', '700');
+      meuSVG.setAttribute('height', '280');
+  } else {
+      var minhaDiv = document.querySelector('.abcSize');
+      var meuSVG = minhaDiv.querySelector('svg');
+      meuSVG.setAttribute('width', '315');
+      meuSVG.setAttribute('height', '203');
+  }
+}
+
 function toggleAndAdjust() {
   toggleContent();
   updateContent();
+  alterarDimensoesSVG();
   onScroll()
 }
 

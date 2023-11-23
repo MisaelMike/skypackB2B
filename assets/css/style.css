@@ -750,7 +750,6 @@ div .logo-footer {
         display: flex;
         flex-direction: column;        
         margin: 0;
-        padding: 6rem;
         
     }
 
@@ -764,7 +763,7 @@ div .logo-footer {
 
     section#sobre .cards_sobre div {
         height: 50rem;
-        width: 80rem;
+        width: 70rem;
     }
 
     #sobre .sobre-celular-info h3 {
@@ -772,18 +771,56 @@ div .logo-footer {
     }
 
     section#sobre .sobre-celular-info p {
-        width: 50rem;
-      
+        width: 50rem;      
+        line-height: 3rem;
     }
 
+    /* =================== Curva ABC =================== */
     
+    .curvaABC .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 
+    .curvaABC h2 {
+        text-align: left;
+        margin-bottom: 4rem;
+    }
 
+    .curvaABC p {
+        text-align: left;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        width: 80%;
+    }
 
+    .abc svg {
+        position: initial;
+    }
 
+    .colB::before {
+        content: "";
+        position: absolute;
+        top: 12rem;
+        left: 50%;
+        height: 50%;
+        border-left: 2px solid var(--primary-color); /* Cor e espessura da borda */
+        box-sizing: border-box; /* Garante que a largura total do elemento inclua a borda */
+    }
 
+    .colB .legenda{
+        text-align: right;
+    }
     
-    
+    .colB .destaqueB {
+        position: relative;
+        right: 1rem;        
+    }
+
+
+
+
+
 
 
 
