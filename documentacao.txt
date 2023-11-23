@@ -4,10 +4,13 @@ Pagina institucional:
         - Inicio 
         - Sobre 
         - Portfólio 
+        - Atuação
 
     --> Inicio ---------ok
 
     --> Sobre ---------ok
+
+    --> Atuação ---------ok
 
     --> Portfólio ---------ok
 
@@ -19,12 +22,16 @@ Pagina institucional:
 
 Duvidas:
     - Verificar se Mercearia e Descartaveis ficam na mesma seção.
-    - Verificar se o "desenvolvido por Afonso" pode final
+    - Verificar se o "desenvolvido por Afonso" pode no final.
 
 Ideias para atualizações futuras:
-    - Pequeno texto para cada Departamento.
+    - Pequeno texto para cada Departamento (hover).
     - Pagina para cada "Departamento".
     - Pagina "Sobre" ("Missão e valores").
     - Pagina "Parceiro".
     - Pagina Politica de privacidade.
     - Verificar Banner com fotos.
+
+Bugs identificados:
+
+- Ver hiperlink com gap no começo quando ainda não foi carregado o ScrollReveal

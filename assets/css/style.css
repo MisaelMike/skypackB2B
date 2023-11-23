@@ -24,8 +24,10 @@
     font-size: 62.5%; /* 1 rem = 10px*/
 }
 
- ::-webkit-scrollbar{
-    width: 0px; /* retira a barra de rolagem mas permite que a continue funcionando */  
+@media (max-width: 1024px) {
+    ::-webkit-scrollbar{
+        width: 0px; 
+    }
 }
 
 html {
@@ -35,9 +37,7 @@ html {
 body {    
     font-family: 'DM Sans';
     font-size: 1.4rem;
-    text-align: center;
-    
-    background-color: var(--primary-color);         
+    text-align: center;  
 }
 
 .wrapper {
@@ -456,6 +456,9 @@ section.portfolio-celular h2{
 }
 
 /* ============================================= Contato ============================================= */
+.contact-us{
+    background-color: var(--primary-color);
+}
 
 .contact-us h2 {
     margin-top: 5rem;
@@ -723,6 +726,58 @@ div .logo-footer {
         margin-block: 19rem;
 
     }
+
+    /* =================== Sobre =================== */ 
+
+    section#sobre h1 {
+        display: flex;
+        text-align: center;
+        margin-inline: auto;
+    } 
+
+    section#sobre p {
+        width: 70rem;
+        text-align: center;
+        margin-inline: auto;
+        font-size: 1.8rem
+    }
+
+    section#sobre h3 {
+        font-size: 2.5rem;
+    }
+
+    section#sobre .sobre-celular-info {
+        display: flex;
+        flex-direction: column;        
+        margin: 0;
+        padding: 6rem;
+        
+    }
+
+    section#sobre .cards_sobre {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+        gap: 2rem;
+        margin: 0 auto 8rem auto;
+    }
+
+    section#sobre .cards_sobre div {
+        height: 50rem;
+        width: 80rem;
+    }
+
+    #sobre .sobre-celular-info h3 {
+        gap: 4rem;
+    }
+
+    section#sobre .sobre-celular-info p {
+        width: 50rem;
+      
+    }
+
+    
+
 
 
 
