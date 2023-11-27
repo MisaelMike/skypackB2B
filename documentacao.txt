@@ -31,7 +31,3 @@ Ideias para atualizações futuras:
     - Pagina "Parceiro".
     - Pagina Politica de privacidade.
     - Verificar Banner com fotos.
-
-Bugs identificados:
-
-- Ver hiperlink com gap no começo quando ainda não foi carregado o ScrollReveal
