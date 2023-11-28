@@ -460,6 +460,10 @@ section.portfolio-celular h2{
     margin-bottom: 8rem;
 }
 
+.img-overlay {
+    display: none;
+}
+
 /* ============================================= Contato ============================================= */
 .contact-us{
     background-color: var(--primary-color);
@@ -826,6 +830,9 @@ div .logo-footer {
 
     /* =================== Portifolio =================== */ 
     
+    .img-overlay {
+        display: initial;
+    }
     .portfolio-celular h1 {
         display: flex;
         text-align: center;
