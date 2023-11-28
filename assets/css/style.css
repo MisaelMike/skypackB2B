@@ -214,14 +214,14 @@ body.menu-expended button {
 }
 
 .close-menu {
-    -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
+    -webkit-tap-highlight-color: transparent;
     outline: none;
     margin-left: auto; 
 }
 
 body.menu-expended .open-menu {
     display: none;
-    -webkit-tap-highlight-color: transparent; /* Para navegadores baseados em Webkit, como o Safari */
+    -webkit-tap-highlight-color: transparent;
     outline: none;
 }
 
@@ -440,8 +440,9 @@ section.sobre-celular {
 }
 
 .img-portfolio-celular img {
+    background-color: red;
     margin: 0 auto 3rem auto;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos no transform */
+    transition: transform 0.3s ease; 
 }
 
 section.portfolio-celular h1 {
@@ -846,6 +847,42 @@ div .logo-footer {
         overflow: hidden;
     }
 
+    .img-overlay {
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out;
+    }
+
+    .img-portfolio-descktop:hover .img-overlay {
+        opacity: 1;
+    }
+
+    .img-portfolio-descktop:hover img {
+        transform: rotateY(180deg);
+        transition: transform 1s ease-in-out;
+    }
+
+    .img-portfolio-descktop {
+        position: relative;
+        perspective: 1000px;
+    }
+
+    .img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 2.5rem;
+        background: rgba(34, 34, 34);
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .img-overlay h4 {
+        margin: 0;
+    }
+
     /* =================== Contato =================== */ 
 
     .infos ul {
@@ -871,6 +908,10 @@ div .logo-footer {
     .infos div strong {
         text-align: left;
     }
+
+    section.contato-cel h2 {
+        margin-bottom: 8rem;
+    }
     
     /* =================== Footer =================== */ 
     .footer-logo-links {
@@ -892,5 +933,5 @@ div .logo-footer {
     #teste {
         width: 80px;
         height: 80px;
-    }
+    }    
 }
