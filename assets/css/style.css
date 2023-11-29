@@ -590,9 +590,9 @@ div .logo-footer {
     font-size: 2rem;
 }
 
-/* ============================================= Back to Top ============================================= */
+/* ============================================= Botões fixos ============================================= */
 
-#backToTopButton {
+.backToTopButton {
     position: fixed;
     bottom: 1rem;
     right: 2.5rem;
@@ -604,7 +604,26 @@ div .logo-footer {
     transition: 200ms;
 }
 
-#backToTopButton.show {
+.backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.WhatsappButtonFixed {
+    position: fixed;
+    bottom: 1rem;
+    left: 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(100%);
+    transition: 200ms;
+}
+
+.WhatsappButtonFixed.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -813,16 +832,6 @@ div .logo-footer {
         text-align: right;
     }
 
-    .colB::before {
-        content: "";
-        margin-block: 10rem;
-        position: absolute;
-        left: 50%;
-        height: 40%;
-        border-left: 2px solid var(--primary-color); 
-        box-sizing: border-box;
-    }
-
     .colB .destaqueB {
         position: relative;
         right: 1rem;        
@@ -879,15 +888,21 @@ div .logo-footer {
         left: 0;
         width: 100%;
         height: 100%;
-        font-size: 2.5rem;
+        font-size: 2rem;
         background: rgba(34, 34, 34);
         color: #fff;
         padding: 20px;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        transform: rotateY(180deg);
     }
 
     .img-overlay h4 {
         margin: 0;
+        transform: rotateY(-180deg); /
     }
 
     /* =================== Contato =================== */ 
@@ -908,7 +923,7 @@ div .logo-footer {
 
     .contato-cel .wrapper ul li {
         display: inline-flex;        
-        font-size: 2rem;
+        font-size: 1.9rem;
         gap: 1rem;
     }
 
@@ -928,17 +943,27 @@ div .logo-footer {
     }
     
     footer .desenvolvido header {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     footer .desenvolvido a {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    div a.logo-footer {
+        margin: 0;
     }
     
-    /* =================== Back to Top =================== */ 
+    /* =================== Botões fixos =================== */ 
 
-    #teste {
+    #backToTopButtonDesktop {
         width: 80px;
         height: 80px;
     }    
+
+    #backToTopButtonDesktop {
+        width: 80px;
+        height: 80px;
+    } 
+
 }

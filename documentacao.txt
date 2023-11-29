@@ -25,9 +25,9 @@ Duvidas:
     - Verificar se o "desenvolvido por Afonso" pode no final.
 
 Ideias para atualizações futuras:
-    - Pequeno texto para cada Departamento (hover).
     - Pagina para cada "Departamento".
     - Pagina "Sobre" ("Missão e valores").
     - Pagina "Parceiro".
     - Pagina Politica de privacidade.
     - Verificar Banner com fotos.
+    

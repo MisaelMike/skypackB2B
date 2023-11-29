@@ -2,7 +2,8 @@ window.addEventListener('scroll', onScroll)
 
 function onScroll() {
   showNavOnScroll()
-  showBackToTopButtonOnScroll()  
+  showBackToTopButtonOnScroll()
+  showWhatsappButtonFixed()  
 }
 
 function showNavOnScroll() {
@@ -17,10 +18,20 @@ function showNavOnScroll() {
 
 function showBackToTopButtonOnScroll() {
   if (scrollY > 600) {
-    let colocarClasseBackToTopButton = document.querySelector("#backToTopButton");
+    let colocarClasseBackToTopButton = document.querySelector(".backToTopButton");
     colocarClasseBackToTopButton.classList.add('show')
   } else {
-    let retirarClasseBackToTopButton = document.querySelector("#backToTopButton");
+    let retirarClasseBackToTopButton = document.querySelector(".backToTopButton");
+    retirarClasseBackToTopButton.classList.remove('show')
+  }
+}
+
+function showWhatsappButtonFixed() {
+  if (scrollY > 600) {
+    let colocarClasseBackToTopButton = document.querySelector(".WhatsappButtonFixed");
+    colocarClasseBackToTopButton.classList.add('show')
+  } else {
+    let retirarClasseBackToTopButton = document.querySelector(".WhatsappButtonFixed");
     retirarClasseBackToTopButton.classList.remove('show')
   }
 }
