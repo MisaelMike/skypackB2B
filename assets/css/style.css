@@ -634,7 +634,7 @@ div .logo-footer {
 @media (min-width: 1024px) {
     /* =================== Geral =================== */ 
     .wrapper {
-        width: min(150rem, 100%);
+        width: min(150rem, 128rem);
         display: grid;
     }
 
@@ -879,7 +879,7 @@ div .logo-footer {
 
     .img-portfolio-descktop {
         position: relative;
-        perspective: 1000px;
+        perspective: 100rem;
     }
 
     .img-overlay {
