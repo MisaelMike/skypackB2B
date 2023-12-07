@@ -791,8 +791,9 @@ div .logo-footer {
     }
 
     section#sobre .cards_sobre div {
-        height: 50rem;
-        width: 70rem;
+        max-width: 100%;
+        min-height: 50rem;
+        width: 50%;
     }
 
     #sobre .sobre-celular-info h3 {
