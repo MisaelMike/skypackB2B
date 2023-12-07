@@ -634,7 +634,7 @@ div .logo-footer {
 @media (min-width: 1024px) {
     /* =================== Geral =================== */ 
     .wrapper {
-        width: min(150rem, 128rem);
+        width: min(150rem, 95%);
         display: grid;
     }
 
