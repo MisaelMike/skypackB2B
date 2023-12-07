@@ -779,15 +779,16 @@ div .logo-footer {
         display: flex;
         flex-direction: column;        
         margin: 0;
-        
+        padding: 3rem 11rem; 
     }
 
     section#sobre .cards_sobre {
         display: flex;
-        align-items: center;
+        align-items: stretch;
         justify-content: space-between;    
         gap: 2rem;
         margin: 0 auto 8rem auto;
+        padding: 3rem;
     }
 
     section#sobre .cards_sobre div {
@@ -798,6 +799,10 @@ div .logo-footer {
 
     #sobre .sobre-celular-info h3 {
         gap: 4rem;
+    }
+
+    #sobre .sobre-celular-info p {
+        padding: 2rem;
     }
 
     section#sobre .sobre-celular-info p {
