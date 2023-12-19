@@ -126,7 +126,7 @@ ScrollReveal({
 }).reveal(`#home,
 #home img,
 .botao-whats-cell,
-.sobre-p,
+.sobre-show,
 .sobre-celular-info,
 .abc,
 .colA,
