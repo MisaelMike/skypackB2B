@@ -3,7 +3,6 @@ window.addEventListener('scroll', onScroll)
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
-  showWhatsappButtonFixed()  
 }
 
 function showNavOnScroll() {
@@ -19,20 +18,14 @@ function showNavOnScroll() {
 function showBackToTopButtonOnScroll() {
   if (scrollY > 600) {
     let colocarClasseBackToTopButton = document.querySelector(".backToTopButton");
+    let colocarClasseWhats = document.querySelector(".WhatsappButtonFixed");
     colocarClasseBackToTopButton.classList.add('show')
+    colocarClasseWhats.classList.add('show')
   } else {
     let retirarClasseBackToTopButton = document.querySelector(".backToTopButton");
+    let retirarClassWhats = document.querySelector(".WhatsappButtonFixed");
     retirarClasseBackToTopButton.classList.remove('show')
-  }
-}
-
-function showWhatsappButtonFixed() {
-  if (scrollY > 600) {
-    let colocarClasseBackToTopButton = document.querySelector(".WhatsappButtonFixed");
-    colocarClasseBackToTopButton.classList.add('show')
-  } else {
-    let retirarClasseBackToTopButton = document.querySelector(".WhatsappButtonFixed");
-    retirarClasseBackToTopButton.classList.remove('show')
+    retirarClassWhats.classList.remove('show')
   }
 }
 
@@ -63,20 +56,15 @@ function adjustForAddressBar() {
 
 function toggleContent() {
   var button = document.querySelector('.button-menu');
+  var minhaImagem = document.querySelector('.seja-fornecedor');
+  
   if (window.innerWidth < 1024) {
     button.textContent = 'Fale com um especialista';
+    minhaImagem.src = 'assets/imagens/seja_fornecedor-cel.png';
   } else {
     button.textContent = 'Contato';
+    minhaImagem.src = 'assets/imagens/seja_fornecedor-pc.png';
   }
-}
-
-function updateContent() {
-  if (window.innerWidth >= 1024) {
-    toggleContent("Contato");
-  } else {
-      toggleContent("Fale com um especialista");
-  }
-  adjustForAddressBar();
 }
 
 function alterarDimensoesSVG() {
@@ -95,9 +83,8 @@ function alterarDimensoesSVG() {
 
 function toggleAndAdjust() {
   toggleContent();
-  updateContent();
   alterarDimensoesSVG();
-  onScroll()
+  onScroll();
 }
 
 window.addEventListener('resize', toggleAndAdjust);
