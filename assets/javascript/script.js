@@ -121,7 +121,7 @@ ScrollReveal({
 .button-contact,
 .img-portfolio-celular,
 .legenda,
-.contato-cel,
+.image-container,
 .infos,
 .logo-footer,
 .social-links-footer`);
