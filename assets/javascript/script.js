@@ -100,7 +100,6 @@ document.querySelectorAll('.scroll-link').forEach(element => {
       if (targetElement) {
           const yOffset = -100;
           const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
-          
           window.scrollTo({ top: y, behavior: 'smooth' });
       }
   });
@@ -116,11 +115,12 @@ ScrollReveal({
 .sobre-show,
 .sobre-celular-info,
 .abc,
+.legenda,
 .colA,
 .contato-reveal,
 .button-contact,
 .img-portfolio-celular,
-.legenda,
+.portifolio-final,
 .image-container,
 .infos,
 .logo-footer,
