@@ -30,4 +30,5 @@ Ideias para atualizações futuras:
     - Pagina "Parceiro".
     - Pagina Politica de privacidade.
     - Verificar Banner com fotos.
+    - Adicionar apos 4 segundos um notao de "ver mais" nos itens do portifolio  
     

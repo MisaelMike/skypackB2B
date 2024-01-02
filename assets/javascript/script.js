@@ -112,8 +112,6 @@ ScrollReveal({
 }).reveal(`#home,
 #home img,
 .botao-whats-cell,
-.sobre-show,
-.sobre-celular-info,
 .abc,
 .legenda,
 .colA,
@@ -121,7 +119,8 @@ ScrollReveal({
 .button-contact,
 .img-portfolio-celular,
 .portifolio-final,
-.image-container,
+.seja-fornecedor,
 .infos,
 .logo-footer,
+.sobre-principal,
 .social-links-footer`);

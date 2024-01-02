@@ -234,14 +234,6 @@ h3 {
     margin-bottom: 1.6rem;
 }
 
-.sobre-celular-info p {
-    font-size: 1.6rem;
-    line-height: 150%;
-    font-weight: 400;
-    color: var(--headline);
-    margin-bottom: 3.2rem;
-}
-
 .button-inicio {
     font-size: 1.8rem;
     padding-inline: 8rem;
@@ -251,6 +243,10 @@ h3 {
 }
 
 /* ============================================= Sobre ============================================= */
+
+section.sobre-celular {
+    padding: 0;
+}   
 
 section.sobre-celular h1 {
     width: 7rem;
@@ -268,58 +264,49 @@ section.sobre-celular {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 6rem 0 5rem 0;
+}
+
+.sobre-box:nth-child(2) .sobre-principal {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.sobre-box:nth-child(2) .sobre-principal img {
+    margin-top: 0;
 }
 
 .sobre-p {
     text-align: justify;
+    overflow: visible;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
-.sobre-celular-info {
-    background-color: var(--backgroud-white);       
-    margin-inline: auto;
-    margin-bottom: 4rem;
-    padding: 0.5rem;
+.sobre-celular h3 {
+    font-size: 2.5rem;    
 }
 
-.sobre-celular h2 {
-    margin-top: 6rem;
-    margin-bottom: 0;
+
+.sobre-celular h2, .sobre-celular h3 {
     color: var(--primary-color);
+    padding: 0;
+    margin: 0;
 }
 
-.sobre-celular-info h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    gap: 2rem;
-    margin: 3rem 2rem;
-    font-size: 2rem;
-    color: var(--sobre-h3);
-} 
-
-.sobre-celular-info p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    width: 30rem;
-    font-family: 'DM Sans';  
-    font-size: 1.6rem;
-    margin-inline: auto;
-    color: var(--p-color);
+.sobre-principal img {
+    width: 100%;
+    height: 100%;
+    margin: 0rem 0rem 4rem 0rem;
 }
 
-.sobre-celular > div > p:first-of-type {
+.sobre-principal > div > p:first-of-type {
     line-height: 3rem;
     font-size: 1.7rem;
     color: var(--p-color);
     padding: 1.2rem;
+    text-align: justify;
     margin-bottom: 3rem;
-}
-
-.sobre-celular-info:last-child {
-    margin-bottom: 8rem;
 }
 
 /* ============================================= Curva ABC ============================================= */
@@ -351,7 +338,7 @@ section.sobre-celular {
 .curvaABC div h3 {
     color: var(--primary-color);
     font-size: 2rem;
-    margin-block: 3rem 2rem;    
+    margin-block: 6rem 2rem;    
 }
 
 .curvaABC div p {
@@ -754,7 +741,6 @@ div .logo-footer {
         text-transform: uppercase;
         font-weight: 700;
         line-height: 10rem;
-
     }
 
     section#home h3 {
@@ -767,65 +753,88 @@ div .logo-footer {
         font-weight: 700;
         padding-inline: 6rem;
         margin-block: 19rem;
-
     }
 
-    /* =================== Sobre =================== */ 
+    /* =================== Sobre =================== */    
 
-    section#sobre h1 {
-        display: flex;
-        text-align: center;
-        margin-inline: auto;
+    .sobre-box {
+        background-color: var(--background-gray);
     } 
 
-    section#sobre p {
-        width: 70rem;
-        text-align: justify;
-        margin-inline: auto;
-        font-size: 2rem
+    .sobre-box:nth-child(1) {
+        padding-top: 6rem;
     }
 
-    section#sobre h3 {
-        font-size: 2.5rem;
+   .sobre-box .sobre-box:nth-child(2) .sobre-principal {
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    section#sobre .sobre-celular-info {
-        display: flex;
-        flex-direction: column;        
-        margin: 0;
-        padding: 3rem 11rem; 
+    .sobre-box:nth-child(2) {
+        background-color: var(--backgroud-white);
     }
 
-    section#sobre .cards_sobre {
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;    
-        gap: 2rem;
-        margin: 0 auto 8rem auto;
-        padding: 3rem;
+    .sobre-box:nth-child(3) {
+        padding: 6rem 0 8rem 0;
     }
 
-    section#sobre .cards_sobre div {
-        max-width: 100%;
-        min-height: 50rem;
-        width: 50%;
-    }
-
-    #sobre .sobre-celular-info h3 {
+    .sobre-principal-topico {
         gap: 4rem;
     }
 
-    #sobre .sobre-celular-info p {
-        padding: 2rem;
+    .sobre-principal {
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .sobre-principal img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .sobre-principal-texto {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
     }
 
-    section#sobre .sobre-celular-info p {
-        width: 50rem;      
-        line-height: 3rem;
+    .sobre-principal-texto h2, .sobre-principal-texto h3 {
+        margin: 0;
+        text-transform: uppercase;
+        text-align: left;   
+        color: var(--primary-color);
+        font-size: 3rem;
+    }
+
+    .sobre-principal div.sobre-principal-texto h1 {
+        display: block;
+        margin: 3rem 0 4rem 0;
+    }
+
+    .sobre-principal-topico p {
+        text-align: justify;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        width: 80%;
+    }
+
+    .sobre-principal-texto p:first {
+        text-align: justify;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    section#sobre h3 {
+        font-size: 3rem;
     }
 
     /* =================== Curva ABC =================== */
-    
     .curvaABC .wrapper {
         display: grid;
         grid-template-columns: 50% 50%;
