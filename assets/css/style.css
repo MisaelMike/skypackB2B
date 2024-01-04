@@ -18,6 +18,7 @@
     --sobre-h3: rgb(63, 61, 62);
     --p-color: rgb(80, 93, 104);
     --hover-portifolio: rgb(34, 34, 34);
+    --destaqueA-portifolio: rgb(125, 125, 125);
 
     --nav-height: 10rem;
 
@@ -171,7 +172,6 @@ body.menu-expended .menu {
     padding: 1.6rem 3.2rem;       
     margin-top: 4.8rem;
     margin-bottom: 8rem;
-
 }
 
 .menu .button-menu:hover {
@@ -304,7 +304,6 @@ section.sobre-celular {
     line-height: 3rem;
     font-size: 1.7rem;
     color: var(--p-color);
-    padding: 1.2rem;
     text-align: justify;
     margin-bottom: 3rem;
 }
@@ -355,7 +354,7 @@ section.sobre-celular {
 }
 
 .destaqueA {
-    color: #7C7C7C;
+    color: var(--destaqueA-portifolio);
     font-weight: bold;
 }
 
@@ -444,7 +443,8 @@ div.portifolio-final-texto p {
 }
 
 /* ============================================= Contato ============================================= */
-.contact-us{
+
+.contact-us {
     background-color: var(--primary-color);
 }
 
@@ -561,7 +561,6 @@ div.infos li {
     justify-content: center;
 }
 
-
 /* ============================================= Footer ============================================= */
 
 footer {
@@ -586,7 +585,6 @@ div .logo-footer {
 .desenvolvido{
     padding-top: 6rem;
     font-size: 1.2rem;
-
 }
 
 .desenvolvido a {
@@ -614,7 +612,6 @@ div .logo-footer {
     transform: translateY(0);
 }
 
-
 .WhatsappButtonFixed {
     position: fixed;
     bottom: 1rem;
@@ -634,14 +631,18 @@ div .logo-footer {
 /* ============================================= Responsivo ============================================= */
 
 @media (min-width: 1024px) {
+
     /* =================== Geral =================== */ 
+    
     .wrapper {
         width: min(150rem, 95%);
         display: grid;
     }
 
     /* =================== Navigation =================== */ 
+
     /* ===== Reset ===== */ 
+    
     nav#navigation .wrapper * {
         margin: 0;
         padding: 0;
@@ -731,7 +732,8 @@ div .logo-footer {
         height: 10rem;
     }
 
-    /* =================== Inicio =================== */ 
+    /* =================== Inicio =================== */
+
     section#home h1 {
         width: 60rem;
         display: flex;
@@ -835,6 +837,7 @@ div .logo-footer {
     }
 
     /* =================== Curva ABC =================== */
+
     .curvaABC .wrapper {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -906,6 +909,7 @@ div .logo-footer {
         transition: transform 0.8s;
         transform-style: preserve-3d;
     }
+
     .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg);
     }
@@ -1010,6 +1014,7 @@ div .logo-footer {
     }
    
     /* =================== Footer =================== */ 
+
     .footer-logo-links {
         display: flex;
         align-items: center;
@@ -1039,5 +1044,4 @@ div .logo-footer {
         width: 80px;
         height: 80px;
     } 
-
 }
