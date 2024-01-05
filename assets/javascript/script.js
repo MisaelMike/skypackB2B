@@ -85,6 +85,7 @@ function toggleAndAdjust() {
   toggleContent();
   alterarDimensoesSVG();
   onScroll();
+  alterarAlturaComprimentoCardsPortifolio();
 }
 
 window.addEventListener('resize', toggleAndAdjust);
@@ -104,6 +105,20 @@ document.querySelectorAll('.scroll-link').forEach(element => {
       }
   });
 });
+
+function alterarAlturaComprimentoCardsPortifolio() {
+  let elementos = document.querySelectorAll('.flip-card-inner');
+
+  elementos.forEach(element => {
+    let elementHeight = 1.0375 * element.offsetWidth;
+    element.setAttribute("style",`height:${elementHeight}px`);
+    element.style.height=element.offsetWidth;      
+  });
+}
+
+window.onload = function() {
+  alterarAlturaComprimentoCardsPortifolio();
+};
 
 ScrollReveal({
   origin: 'top',

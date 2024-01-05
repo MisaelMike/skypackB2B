@@ -631,20 +631,6 @@ div .logo-footer {
 }
 
 @media (min-width: 1024px) {
-    @media (max-width: 1200px) {
-        .portfolio-celular .wrapper .img-portfolio-celular .flip-card .flip-card-inner {
-            height: 28rem;
-        }
-    }
-    
-    @media (max-width: 1350px) {
-        .wrapper .img-portfolio-celular .flip-card .flip-card-inner {
-            height: 31rem;
-        }
-    } 
-}
-
-@media (min-width: 1024px) {
 
     /* =================== Geral =================== */ 
 
@@ -894,10 +880,6 @@ div .logo-footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2rem;
-    }
-
-    .img-portfolio-celular .flip-card .flip-card-inner {
-        height: 38rem;
     }
     
     .img-portfolio-celular .img-portfolio-descktop img {
