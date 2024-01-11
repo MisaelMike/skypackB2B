@@ -786,7 +786,7 @@ div .logo-footer {
     }
 
     .sobre-principal {
-        padding-top: 0;
+        padding-top: 6rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
