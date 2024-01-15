@@ -132,10 +132,7 @@ ScrollReveal({
 .colA,
 .contato-reveal,
 .button-contact,
+.sobre-principal,
 .img-portfolio-celular,
 .portifolio-final,
-.seja-fornecedor,
-.infos-stats,
-.logo-footer,
-.sobre-principal,
-.social-links-footer`);
+.seja-fornecedor`);
